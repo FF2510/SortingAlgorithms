@@ -42,6 +42,9 @@ Welcome to the **Sorting Algorithms Library** repository! This project is a comp
 
 3. Build the solution to restore the NuGet packages and compile the project.
 
+4. You can also download the DLL [here](https://1drv.ms/u/s!AjzKkFpEfYCGhq0FypMd-DGNAtCyYg?e=Ge97gG).
+
+
 ### Usage
 
 To use a sorting algorithm from the library, first add a reference to the `SortingAlgorithms` project in your solution. Then, you can use the sorting algorithms as follows:
