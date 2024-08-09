@@ -110,6 +110,26 @@ namespace SortingAlgorithms
                 array[j] = temp[j];
             }
         }
+        
+        /// <summary>
+        /// Checks if an array is sorted in ascending order.
+        /// </summary>
+        /// <param name="array">The array to check.</param>
+        /// <returns>True if the array is sorted, otherwise false.</returns>
+        public static bool IsSorted(int[] array)
+        {
+            // Loop through all elements in the array.
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                // If the current element is greater than the next element, the array is not sorted.
+                if (array[i] > array[i + 1])
+                {
+                    return false;
+                }
+            }
 
+            // The array is sorted.
+            return true;
+        }
     }
 }
