@@ -13,11 +13,12 @@ Welcome to the **Sorting Algorithms Library** repository! This project is a comp
 
 ## Included Algorithms
 
-- **Bubble Sort**: A simple comparison-based algorithm.
-- **Quick Sort**: A highly efficient divide-and-conquer algorithm.
-- **Merge Sort**: A stable, divide-and-conquer algorithm.
-- **Insertion Sort**: An efficient algorithm for small datasets.
 - **Selection Sort**: A simple, comparison-based algorithm.
+- **Insertion Sort**: An efficient algorithm for small datasets.
+- **Bubble Sort**: A simple comparison-based algorithm.
+- **Merge Sort**: A stable, divide-and-conquer algorithm.
+- **Quick Sort**: A highly efficient divide-and-conquer algorithm.
+- **Bogo Sort**: A highly inefficient algorithm that randomly shuffles the array until it is sorted. Mainly used as a humorous or educational example.
 
 ## Getting Started
 
