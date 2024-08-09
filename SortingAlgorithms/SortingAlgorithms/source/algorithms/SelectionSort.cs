@@ -37,7 +37,7 @@ namespace SortingAlgorithms
                 if (s != i)
                 {
                     // Swap elements (s <-> i) using the Sorting Helper library.
-                    SortingHelper.Switch(array, i, s);
+                    SortingHelper.Swap(array, i, s);
                 }
             }
         }

@@ -25,7 +25,7 @@ namespace SortingAlgorithms
                     if (array[j] > array[j + 1])
                     {
                         // Swap the elements (j <-> j + 1) using the Sorting Helper library.
-                        SortingHelper.Switch(array, j, j + 1);
+                        SortingHelper.Swap(array, j, j + 1);
                     }
                 }
             }

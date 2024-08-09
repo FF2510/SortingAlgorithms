@@ -9,8 +9,8 @@ namespace SortingAlgorithms.Tests
             int[] array = {1, 2};
             int[] expected = {2, 1};
 
-            // Switch
-            SortingHelper.Switch(array, 0, 1);
+            // Swap
+            SortingHelper.Swap(array, 0, 1);
 
             // Check if successful (Assert)
             Assert.Equal(array, expected);
