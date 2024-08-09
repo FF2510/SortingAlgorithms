@@ -1,5 +1,3 @@
-using System.Data;
-
 namespace SortingAlgorithms
 {
     /// <summary>
@@ -57,6 +55,60 @@ namespace SortingAlgorithms
 
             // Return the final pivot position.
             return m;
+        }
+        
+        /// <summary>
+        /// Merges two sorted sub-arrays of an integer array into a single sorted sub-array.
+        /// The sub-arrays are defined by the indices [left, middle] and [middle + 1, right].
+        /// The merged result is stored back into the original array.
+        /// </summary>
+        /// <param name="array">The array containing the sub-arrays to be merged.</param>
+        /// <param name="left">The starting index of the first sub-array.</param>
+        /// <param name="middle">The ending index of the first sub-array (middle point).</param>
+        /// <param name="right">The ending index of the second sub-array.</param>
+        public static void Merge(int[] array, int left, int middle, int right)
+        {
+            // Temporary array with the same size as the given array.
+            int[] temp = new int[array.Length];
+
+            // Pointer for the left part of the array.
+            int leftPointer = left;
+
+            // Pointer for the right part of the array.
+            int rightPointer = middle + 1;
+
+            // Current position (index) in the temporary array.
+            int i = left;
+
+            // Loop while either the left or right pointer is within its boundaries.
+            while (leftPointer <= middle || rightPointer <= right)
+            {
+                // If right pointer is out of bounds or left pointer is within bounds and less than or equal to right pointer's value.
+                if (rightPointer > right || (leftPointer <= middle && array[leftPointer] <= array[rightPointer]))
+                {
+                    // Set next array element to be value of left pointer.
+                    temp[i] = array[leftPointer];
+                    // Increment pointer ...
+                    leftPointer++;
+                }
+                else
+                {
+                    // Set next array element to be value of right pointer.
+                    temp[i] = array[rightPointer];
+                    // Increment pointer ...
+                    rightPointer++;
+                }
+
+                // Increment index in temporary array.
+                i++;
+            }
+
+            // Copy the sorted elements from the temp array back into the original array.
+            for (int j = left; j <= right; j++)
+            {
+                // Replace element.
+                array[j] = temp[j];
+            }
         }
 
     }
