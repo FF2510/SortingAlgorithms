@@ -30,7 +30,7 @@ Welcome to the **Sorting Algorithms Library** repository! This project is a comp
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/sorting-algorithms.git
+    git clone https://github.com/FF2510/sorting-algorithms.git
     cd sorting-algorithms
     ```
 
